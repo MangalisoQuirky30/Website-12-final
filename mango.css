@@ -1,0 +1,974 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: .8;
+max-width: 1348px;
+margin: auto;
+}
+ol, ul {
+list-style: none;
+}
+a {
+  text-decoration: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+p{
+    font-size: 12px;
+    line-height: .8;
+
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: arial;
+  scroll-behavior: smooth;
+}
+/* This is for the HOME/WELCOME page */
+#home {
+  background: linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, 0.5)  ),url("./images/home-bg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  width: 1348px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    margin: auto;
+    width: 100%;
+  }
+  #home, #about, #benefits, #testimonials, #team, #contact {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.logo-container img {
+  width: 100px;
+  height: 50px;
+  margin: 30px 30px 30px 25px;
+  vertical-align: middle;
+
+}
+.menu {
+  margin: 0px 50px 30px 50px;
+
+}
+.menu ul {
+  margin: 40px 30px 0 30px;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 12px;
+}
+.menu ul li a:hover{
+  color: white;
+}
+.active, .btn:hover {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border-radius: 1px;
+}
+
+
+
+.navigation {
+  position: fixed;
+	z-index: 1000;
+	height: 50px;
+  width: 100%;
+	background: rgba(0,0,0,.5);
+	padding: 18px;
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.active-2 {
+  background-color: rgba(34,34,34,1);
+}
+
+.middle-content{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+padding: 150px 0;
+}
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+  font-size: 12px;
+}
+.bottom-content div:not(last-child){
+  margin-right: 50px;
+}
+.bottom-content div p:nth-child(2){
+  color: white;
+}
+.this {
+  color: orange;
+  border-top: 3px solid orange;
+  padding: 30px 0 10px 0;
+}
+.home-left-side p {
+  color: white;
+  font-size: 12px;
+}
+.home-left-side h1{
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1;
+}
+.home-left-side a{
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+.home-left-side a button{
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: orange;
+  border: unset;
+}
+
+/* This is for the ABOUT section */
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px; 50px;
+}
+.about-left-side{
+  margin-right: 30px;
+
+}
+.about-left-side .h1-1{
+  border-left: 8px solid orange;
+  margin-left: -30px;
+}
+.about-left-side h1{
+  color: black;
+  font-size: 50px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+.about-left-side p{
+    color: grey;
+    font-size: 12px;
+    line-height: .8;
+
+}
+/* This is for the HOW IT WORK section */
+#how-it-work {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px; 50px;
+}
+.HIW-right-side , .HIW-left-side {
+  width: 50%;
+}
+.HIW-left-side img {
+  width: 370px;
+  height: 500px;
+}
+.HIW-right-side .h1-2{
+  border-left: 6px solid orange;
+  margin-left: -40px;
+}
+.HIW-right-side h1{
+  color: black;
+  font-size: 50px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+.HIW-right-side p {
+  color: grey;
+  font-size: 12px;
+  line-height: .8;
+}
+.HIW-right-side ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.HIW-text p{
+  color: grey;
+  font-size: 12px;
+  line-height: .8;
+}
+.HIW-text {
+  width: 95%;
+}
+.HIW-icons{
+  width: 5%;
+}
+.HIW-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/* This is for the WHY section */
+#why {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: orange;
+}
+.WHY-left-side , .WHY-right-side {
+  width: 50%;
+  margin: 50px;
+}
+
+
+.WHY-left-side-text-top h1{
+  color: white;
+  font-size: 50px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+.WHY-left-side-text-top .h1-2{
+  border-left: 5px solid white;
+  margin-left: -35px;
+}
+.WHY-left-side-text-top h2{
+  color: white;
+  font-size: 25px;
+  margin-right: 30px;
+  font-weight: 100;
+}
+.WHY-left-side-text-top p{
+  color: white;
+  font-size: 12px;
+  margin-right: 30px;
+  line-height: 1.5;
+}
+.WHY-left-side-text-bottom {
+  display: flex;
+}
+.WHY-left-side-text-bottom ul {
+  margin-right: 80px;
+}
+.WHY-left-side-text-bottom ul li{
+  display: flex;
+  align-items: center;
+}
+.WHY-icons {
+  margin-right: 15px;
+}
+.WHY-icons img {
+  width: 20px;
+  height: 20px;
+}
+.WHY-text {
+  color: white;
+}
+.WHY-right-side img {
+  width: 470px;
+  height: 450px;
+}
+
+/* This is for the BENEFITS section */
+
+/* id="benefits" CONSISTS of two sections
+    named "TAKE MORE WITH US" and "WHAT YOU GET"
+    This is TAKE MORE WITH US */
+.benefits{
+  background: #F9FAFF;
+}
+.take-more-with-us {
+  margin: 50px;
+  margin-top: 150px;
+}
+.benefits-top {
+  text-align: center;
+}
+.benefits-top h1{
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+}
+.benefits-top p{
+  color: grey;
+  font-size: 12px;
+}
+.benefits-middle , .benefits-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.x {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 33.33%;
+  margin: 30px;
+}
+.re {
+  border-top: 6px solid orange;
+  padding-top: 20px;
+}
+.benefits-icons img{
+  width: 50px;
+  height: 50px;
+}
+.benefits-text{
+  margin-left: 30px;
+  line-height: 2;
+}
+.benefits-text p , .p{
+  color: grey;
+  line-height: 2;
+
+}
+
+/* This is for the BENEFITS section */
+
+/* id="benefits" CONSISTS of two sections
+    named "TAKE MORE WITH US" and "WHAT YOU GET"
+    This is WHAT YOU GET */
+
+ .what-you-get {
+   margin: 50px;
+   margin-top: 150px;
+ }
+ .benefits-bottom-2 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 70px;
+ }
+ .image , .weather , .be-up-to-date {
+   width: 25%;
+   height: 100%;
+ }
+ .be-up-to-date {
+   height: 420px;;
+ }
+  .list {
+    width: 17%;
+  }
+    .benefits-top-2 {
+      text-align: center;
+    }
+    .benefits-top-2 h1{
+      color: black;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    .benefits-top-2 p{
+      color: grey;
+      font-size: 12px;
+      line-height: 2;
+    }
+    .ou {
+      border-top: 6px solid orange;
+      padding-top: 20px;
+    }
+
+.list ul li {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid grey;
+}
+.list ul li:hover {
+  border-right: unset;
+}
+.list ul li:not(:last-child) {
+  border-bottom: 1px solid grey;
+}
+.list ul li:last-child:hover {
+  border-bottom: 1px solid grey;
+}
+.list ul li:first-child:hover {
+  border-top: 1px solid grey;
+}
+
+.list-text , .list-icons {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.list-icons img {
+  width: 50px;
+  height: 50px;
+}
+.list-text h3{
+  margin-left: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.list-text  a{
+  color: black;
+  text-decoration: none;
+}
+.list-text  a:hover{
+  color: orange;
+}
+.butd-text h1{
+  font-size: 15px;
+  font-weight: bold;
+}
+.butd-text p{
+  color: grey;
+  font-size: 12px;
+  line-height: 2;
+}
+.butd-weather {
+  margin: 40px;
+  width: 200px;
+  height: 200px;
+}
+.butd-weather-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.butd-weather-top-icon img {
+  width: 20px;
+  height: 20px;
+}
+.butd-weather-top-date h5 {
+  font-size: 10px;
+}
+.butd-weather-middle h1 {
+  font-size: 100px;
+  text-align: center;
+  margin: 10px;
+}
+.butd-weather-bottom {
+  display: flex;
+  justify-content: space-between;
+
+}
+.butd-weather-bottom div{
+  display: flex;
+  align-items: center;
+}
+.butd-weather-bottom-icon img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.butd-weather-bottom-text h5 {
+  font-size: 10px;
+}
+.image img {
+  width: 300px;
+}
+.weather-days-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.weather-day {
+  text-align: center;
+  margin:
+}
+.weather-day img {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  margin:  10px 0;
+}
+.weather-day p{
+  color: grey;
+  font-size: 12px;
+}
+.weather-text p{
+  color: grey;
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* This is for the TESTIMONIALS section */
+
+#testimonials {
+  background-color: orange;
+}
+
+.testimonials-top ,
+.testimonials-middle ,
+.testimonials-bottom {
+  margin: 50px;
+}
+
+.testimonials-top h1{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+.testimonials-top p{
+  color: white;
+  line-height: 2;
+}
+.testimonials-middle {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.testimonials-middle div{
+  height: 40px;
+}
+.testimonials-middle-logo h1{
+  font-size: 25px;
+  margin-right: 60px;
+  margin-top: 10px;
+}
+
+.testimonials-middle div:not(:last-child){
+  border-right: 1px solid white;
+}
+.google {
+  font-family: 'Noto Serif', serif;
+  color: white;
+}
+.viber {
+  color: white;
+  font-family: 'Jua', sans-serif;
+  font-weight: bold:
+}
+.microsoft{
+  font-family: 'Kanit', sans-serif;
+  color: white;
+}
+
+
+.flip-card {
+ background-color: transparent;
+ width: 1348px;
+ height: 500px;
+ margin-bottom: 50px;
+}
+
+.flip-card-inner {
+ position: relative;
+ width: 1148px;
+ height: 500px;
+ text-align: center;
+ transition: transform 3s;
+ transform-style: preserve-3d;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+ transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+ position: absolute;
+ width: 1148px;
+ height: 500px;
+ backface-visibility: hidden;
+}
+
+.flip-card-front {
+ background-color: orange;
+ color: black;
+ z-index: 2;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.flip-card-back {
+ background-color: orange;
+ color: white;
+ transform: rotateY(180deg);
+ z-index: 1;
+ display: flex;
+ justify-content: space-around;
+}
+.img-container img {
+  width: 400px;
+  height: 500px;
+}
+.text-container {
+  width: 700px;
+  height: 300px;
+  background-color: white;
+  color: grey;
+  border-radius: 5px;
+  margin: 10px;
+
+}
+.text-container p{
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 20px;
+  text-align: left;
+}
+.span-1{
+  font-weight: bold;
+}
+/* This is for the TEAM section */
+
+#team {
+  /* margin: 50px;
+  margin-top: 150px; */
+}
+.team-top {
+  text-align: center;
+}
+.team-top h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.mememe {
+  border-top: 6px solid yellow;
+  padding-top: 20px;
+}
+.team-top p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 20px;
+  color: grey;
+}
+.team-bottom {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-bottom-text-container {
+  text-align: center;
+}
+.team-bottom-text-container h1 {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 20px;
+  color: black;
+}
+.team-bottom-text-container p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 10px;
+  color: grey;
+}
+div .yellow-text {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 10px;
+  color: orange;
+  font-weight: bold;
+}
+.team-bottom-image-container {
+  width: 250px;
+  height: 300px;
+}
+.team-bottom-image-container  img {
+  width: 250px;
+  height: 300px;
+}
+.team-bottom-image-link-container {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+}
+.team-bottom-link-container {
+  background-color: white;
+  width: 40px;
+}
+.team-bottom-link-container ul {
+  margin-top: 80px;
+}
+.team-bottom-link-container ul li {
+  text-align: center;
+  padding: 10px 0;
+}
+.team-bottom-link-container ul li i{
+  color: white;
+  text-align: center;
+}
+.team-bottom div:hover .team-bottom-link-container {
+  background-color: orange;
+  transition: 1.5s;
+}
+/* This is for the CONTACT section */
+#contact {
+  padding-top: 100px;
+}
+.contact-text-container h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.nt {
+border-top: 6px solid orange;
+padding-top: 20px;
+}
+.contact-text-container p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 10px;
+  color: grey;
+  text-align: center;
+}
+.contact-form-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+.contact-details {
+  text-align: center;
+}
+.contact-details p, .contact-details h1 {
+  margin: 20px;
+}
+.contact-details img {
+  width: 50px;
+  height: 50px;
+}
+.form-row-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+.form-row-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-bottom: 30px;
+
+}
+.form-row-2 input , .form-row-1 input{;
+  width: 280px;
+  height: 30px;
+  background-color: lightgrey;
+  border: none;
+}
+.form-row-1 [placeholder] ,
+.form-row-1 [placeholder] {
+  color: grey;
+}
+
+
+.dropbtn {
+  background-color: lightgrey;
+  color: grey;
+  width: 280px;
+  height: 30px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+.fas {
+padding-left: 150px;
+color: orange;
+}
+
+select {
+border-radius:;
+background-color: lightgrey;
+color: grey;
+width: 282px;
+height: 32px;
+font-size: 12px;
+border: unset;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightgrey;
+  min-width: 160px;
+  z-index: 1;
+  width: 280px;
+}
+
+.dropdown-content a {
+  color: grey;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {
+color: orange;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: lightgrey;
+  color: grey;
+}
+.form-row-3 {
+  display: flex;
+  flex-direction: column;
+}
+.form-row-3 input {
+  width: 600px;
+  padding-bottom: 100px;
+  background-color: lightgrey;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.form-row-3 button {
+  width: 200px;
+  height: 60px;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-size: 15px;
+  margin-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+iframe {
+  color: orange;
+  margin: 0;
+
+}
+
+
+
+
+
+
+/* This is for the FOOTER */
+
+footer {
+  background-color: #202020;
+  margin: 0;
+  text-align: center;
+}
+.footer-top {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-t-2 {
+  background-color: black;
+}
+.f-t-2 button{
+  background-color: black;
+  border: none;
+}
+.footer-top em {
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+.footer-top i{
+  color: orange;
+  background-color: transparent;
+  padding: 10px;
+  font-size:  25px;
+}
+.footer-top input{
+  padding: 10px;
+  padding-right: 300px;
+  background-color: transparent;
+  border: unset;
+  border-radius: 2.5px;
+}
+.footer-top [placeholder] ,
+.footer-top ::placeholder{
+color: white;
+font-size:  15px;
+align-self: center;
+}
+.footer-middle ul {
+  padding: 30px;
+}
+.footer-middle ul li{
+  display: inline-block;
+  padding: 10px;
+}
+.footer-middle ul li a{
+  color: white;
+  font-size: 15px;
+}
+.footer-bottom {
+  color: white;
+  padding: 30px;
+
+}
