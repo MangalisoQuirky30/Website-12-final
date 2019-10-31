@@ -52,12 +52,16 @@ p{
 
 }
 
+ html {
+	 
+  scroll-behavior: smooth;
+}
 
 body, html {
   height: 100%;
-  margin: 0;
   font-family: arial;
-  scroll-behavior: smooth;
+	margin : 0 auto ;
+	max-width : 1024px;
 }
 /* This is for the HOME/WELCOME page */
 #home {
